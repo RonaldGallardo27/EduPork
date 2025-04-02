@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Edupork</title>
+</head>
+<body>
+    <div>
+        <img class="nubes" src="IMAGENES/Group 7.svg" alt="nubes">
+        <img class="nubes2" src="IMAGENES/Group 8.svg" alt="nubes2">
+        <img class="rancho" src="IMAGENES/163 sin título_20240826101944 1 (2).svg" alt="rancho">
+    </div>
+    <div class="container-form">
+        <button class="button-r"> <img class="icon-google" src="IMAGENES/image 25.svg" alt="icon-google">Registrarse con google</button>
+        <form onsubmit=" ConfirmarContraseña(event)">
+            <fieldset>
+                <legend>O correo electronico</legend>
+            </fieldset>
+            <div class="form-input">
+                <label>Nombre Completo</label>
+                    <input type="text" placeholder="Escriba su Nombre Completo" required>
+            </div>
+            <div class="form-input">
+                <label>Tipo de identificacion</label>
+                <select name="type-of-ide" required>
+                    <option value="" disabled selected>Seleccione el tipo de identificacion</option>
+                    <option value="T.I">Tarjeta de identidad</option>
+                    <option value="C.D">Cedula de Ciudadania</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <label>Número de identificación</label>
+                    <input type="number" placeholder="Digite su identificacion" required>
+            </div>
+            <div class="form-input">
+                <label>Correo electrónico</label>
+                    <input type="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="form-input">
+                <label>Contraseña</label>
+                    <input type="password" id="password" placeholder="Digite su contraseña" required>
+            </div>
+            <div class="form-input">
+                <label>Confirmar contraseña</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirme su contraseña" required>
+            </div>
+            <div id="mensaje" class="alerta"></div>
+            <button type="submit" class="button-rr">Registrarse</button>
+        </form>
+    </div>
+    <div>
+        <img class="logoedupork" src="IMAGENES/image 1.svg" alt="logoedupork">
+        <img class="pasto" src="IMAGENES/Group 23.svg" alt="pasto">
+        <img class="porcino" src="IMAGENES/image 18.svg" alt="porcino">
+    </div>
+    <script src="Registro.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial,  sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(183, 100%, 93%);
+    color: white;
+    overflow: hidden;
+}
+
+
+/*CONTENEDOR*/
+.container-form{
+    background-color: #60836a;
+    padding: 0px 10px 25px 10px;
+    box-shadow: 0 0 25px rgb(80, 129, 84);
+    border-radius: 35px;
+    width: 566px;
+    overflow: hidden;
+}
+
+label{
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.form-input{
+    margin: 0px 10px 3px;
+    padding: 0 70px;
+}
+
+input, select{
+    color: rgb(67, 66, 66);
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 9px;
+}
+
+legend{
+    padding: 0px 8px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+fieldset{
+    border: 1px solid rgb(255, 255, 255);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 70%;
+    display: block;
+    margin: 1px auto;
+    padding: 10px;
+}
+
+.button-r{
+    width: 50%;
+    margin: 15px auto 15px;
+    padding: 13px;
+    display: block;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.button-rr{
+    display: block;
+    width: 25%;
+    margin: 25px auto 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 60px;
+}
+
+.button-rr:hover{
+    background-color: rgb(186, 187, 186);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.icon-google{
+    position: sticky;
+    width: 1.6vw;
+    height: auto;
+    top: 100vh;
+    bottom: 50vh;
+}
+
+.alerta {
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+.success {
+    color: rgb(108, 232, 108);
+    margin: 10px;
+}
+
+#mensaje {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+/*FONDO DE LA PAGINA*/
+.logoedupork{
+    position: absolute;
+    width: 20vw;
+    right: 79%;
+    bottom: 4vh;
+}
+
+.rancho{
+    position: absolute;
+    right: 72%;
+    width: 28vw;
+    height: auto;
+    bottom: 1vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.pasto{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    right: 0%;
+    bottom: 0vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.nubes{
+    position: absolute;
+    width: 24vw;
+    height: auto;
+    right: 72%;
+    bottom: 75vh;
+    z-index: -1;
+}
+
+.nubes2{
+    position: absolute;
+    width: 25vw;
+    left: 73%;
+    bottom: 71vh;
+    z-index: -1;
+}
+
+.porcino{
+    position: absolute;
+    width: 25vh;
+    height: auto;
+    left: 79%;
+    bottom: 10vh;
+    z-index: -1;
+}
+
+
+/*RESPONSIVE PARA TABLETS*/
+@media (max-width: 769px) {
+    .container-form{
+        width: 390px;
+        height: 580px;
+        padding: 0px 1px 55px 10px;
+    }
+
+    label{
+        font-size: 13px;
+        line-height: 1.4em;
+    }
+    
+    .form-input{
+        margin: 0px 1px 10px;
+        padding: 0 65px;
+    }
+    
+    input, select{
+        width: 100%;
+        padding: 10px;
+    }
+
+    fieldset{
+        width: 80%;
+        padding: 3px;
+        margin-bottom: 3vh;
+    }  
+
+    .button-rr{
+        margin: 15px auto 15px;
+        padding: 8px;
+    }
+
+    .button-r{
+        padding: 12px;
+    }
+
+    .icon-google{
+        width: 1.3em;
+    }
+
+    .porcino{
+        width: 16vw;
+        bottom: 8vh;
+    }
+}
+
+.alerta {
+    margin: 8px;
+}
+
+
+/*RESPONSIVE PARA MOVILES*/
+@media (max-width: 429px) {
+    .container-form{
+        width: 275px;
+        height: 500px;
+        padding: 0px 1px 55px 10px;
+    }
+
+    label{
+        font-size: 12.5px;
+        line-height: 1.4em;
+    }
+    
+    .form-input{
+        margin: 0px 1px 3px;
+        padding: 0 32px;
+    }
+    
+    input, select{
+        width: 100%;
+        padding: 6px;
+    }
+
+    fieldset{
+        padding: 3px;
+    }  
+
+    .button-rr{
+        width: 85px;
+        padding: 5px;
+    }
+
+    .button-r{
+        width: 170px;
+        padding: 2.9%  ;
+    }
+
+    .icon-google{
+        width: 1.3em;
+        padding: 0px;
+    }
+
+    .porcino{
+        width: 15vw;
+        bottom: 3vh;
+    }
+
+    .logoedupork{
+        bottom: 2vh;
+    }
+
+    #mensaje{
+        font-size: 0.6em;
+        margin-top: 10px;
+        padding: 5px;
+    }
+}
+
